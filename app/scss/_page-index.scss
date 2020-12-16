@@ -1,0 +1,321 @@
+
+.page-index {
+
+/* ---------------------------------------------- SECTION - 1 ---------------------------------------------- */
+
+	.section-1 {
+
+		margin-bottom: 70px;
+
+		@media screen and (min-width: 1126px) {
+			margin-bottom: 100px;
+		}
+
+		@media screen and (min-width: 1360px) {
+			margin-bottom: 125px;
+		}
+
+		.category {
+			@media screen and (min-width: 1125px) {
+				margin-top: -110px;
+			}
+		}
+	}
+
+	@import "category"; 
+
+// end section-1
+
+/* ---------------------------------------------- SECTION - 2 ---------------------------------------------- */
+
+	.section-2 {
+
+		width: 100%;
+		
+		@media screen and (min-width: 1126px) {
+			min-height: 720px;
+			background: url('/_html/app/images/dest/1280/section_2.jpg') no-repeat 0px 0px;
+		}
+
+		@media screen and (min-width: 1360px) {
+			min-height: 930px;
+			background: url('/_html/app/images/dest/1920/section_2.jpg') no-repeat 0px 0px;
+		}
+
+		@media screen and (min-width: 1360px) {
+			background-position-x: -40%;
+		}
+
+		@media screen and (min-width: 1460px) {
+			background-position-x: -30%;
+		}
+
+		@media screen and (min-width: 1560px) {
+			background-position-x: -20%;
+		}
+
+		@media screen and (min-width: 1660px) {
+			background-position-x: -10%;
+		}
+
+		@media screen and (min-width: 1760px) {
+			background-position-x: -5%;
+		}
+
+		@media screen and (min-width: 1860px) {
+			background-position-x: 0;
+		}
+	} 
+
+
+// end section-2
+
+/* ---------------------------------------------- SECTION - 3 ---------------------------------------------- */
+
+	.section-3 {
+
+		margin-bottom: 250px;
+
+		@media screen and (max-width: 1360px) {
+			margin-bottom: 270px;
+		}
+
+		@media screen and (max-width: 1125px) {
+			margin-bottom: 80px;
+		}
+
+		.category {
+
+			@media screen and (max-width: 1125px) {
+				margin-top: 0;
+			}
+
+			@media screen and (min-width: 1126px) {
+				margin-top: -80px;
+			}
+			
+			@media screen and (min-width: 1360px) {
+				margin-top: -100px;
+			}
+		}
+	} 
+
+	@import "userpic"; 
+
+// end section-3
+
+/* ---------------------------------------------- SECTION - 4 ---------------------------------------------- */
+
+	.section-4 {
+
+
+		@media screen and (min-width: 767px) {
+			margin-bottom: 80px;
+		}
+
+		@media screen and (min-width: 1360px) {
+			margin-bottom: 100px;
+		}
+
+		&__text {
+			max-width: 750px;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 30px;
+
+			@media screen and (max-width: 1160px) {
+				padding: 0 20px;
+				margin-bottom: 30px;
+			}
+
+			@media screen and (min-width: 1161px) {
+				margin-bottom: 50px;
+			}
+		}
+
+		
+		&__image {
+
+			position: relative;
+			z-index: 9;
+
+			@media screen and (max-width: 375px) {
+				width: 100%;
+				height: 533px;
+				background-image: url('/_html/app/images/dest/mobile/section_4.jpg');
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			@media screen and (min-width: 376px) {
+				width: 100%;
+				height: 698px;
+				background-image: url('/_html/app/images/dest/1280/section_4.jpg');
+			}
+
+			@media screen and (min-width: 768px) {
+				width: 56%;
+				position: absolute;
+				bottom: -470px;
+				right: 0;
+			}
+
+			@media screen and (min-width: 1126px) {
+				bottom: -390px;
+				right: 0;
+			}
+
+			@media screen and (min-width: 1360px) {
+				bottom: -326px;
+				right: 0;
+				background-image: url('/_html/app/images/dest/1920/section_4.jpg');
+			}
+			
+			.logo {
+
+				@media screen and (max-width: 768px) {
+					top: 45px;
+					left: 50%;
+				}
+
+				@media screen and (max-width: 375px) {
+					margin-left: -42px;
+				}
+
+				@media screen and (min-width: 376px) {
+					width: 124px;
+					height: 124px;
+					margin-left: -62px;
+					background: url('/_html/app/images/dest/logo_large.svg');
+				}
+
+				@media screen and (min-width: 769px) {
+					top: 86px;
+					right: 11%;
+					left: auto;
+					margin: 0;
+				}
+
+				@media screen and (min-width: 1360px) {
+					top: 143px;
+					right: 29%;
+				}
+			}
+
+		} // end .section-4__image
+
+	} // end section-4
+
+
+/* ---------------------------------------------- SECTION - 5 ---------------------------------------------- */
+
+	.section-5 {
+		
+		max-width: 1640px;
+		background: #FFEEF5;
+		position: relative;
+
+		@media screen and (max-width: 1359px) {
+			max-width: 1210px;
+		}
+
+		@media screen and (max-width: 767px) {
+			&::before {
+				content: '';
+				width: 67%;
+				height: 50px;
+				position: absolute;
+				top: -50px;
+				left: 0;
+				z-index: 10;
+				background: #FFEEF5;
+			}
+		}
+
+		.container {
+			max-width: 950px;
+			padding: 154px 10px 120px 290px;
+			margin: 0;
+			background: #FFEEF5;
+			position: relative;
+			z-index: 10;
+
+			@media screen and (max-width: 1359px) {
+				padding: 154px 10px 120px 80px;
+				max-width: 650px;
+			}
+
+			@media screen and (max-width: 767px) {
+				padding: 50px 25px;
+				max-width: 650px;
+			}
+		}
+
+		&__heading {
+			max-width: 320px;
+			font-weight: 200;
+			font-size: 40px;
+			line-height: 45px;
+			margin-bottom: 10px;
+
+			@media screen and (max-width: 375px) {
+				font-size: 30px;
+				line-height: 30px;
+			}
+		}
+
+		&__subtitle {
+			max-width: 270px;
+			margin-bottom: 50px;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 30px;
+
+			@media screen and (max-width: 1359px){
+				margin-bottom: 70px;
+			}
+
+			@media screen and (max-width: 767px){
+				margin-bottom: 45px;
+			}
+
+			@media screen and (max-width: 375px){
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+
+		.steps {
+
+			&-list {
+				
+				margin-left: 0!important;
+
+				@media screen and (max-width: 1359px) {
+					margin-bottom: 30px;
+				}
+
+				&-item {
+					width: 33.33333%;
+
+					@media screen and (max-width: 1359px) {
+						margin-right: 40px;
+
+					}
+				}
+			}
+		}
+
+	} // end section-5
+
+	
+	@import "steps";
+
+
+	.footer {
+		.container {
+			border: none;
+		}
+	}
+
+} // end page-index

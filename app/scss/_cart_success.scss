@@ -1,0 +1,117 @@
+.page-cart-success {
+  .header {
+    height: 183px;
+
+    &__sidebar {
+      background-color: $lightblue;
+      width: 401px;
+      height: 100%;
+      position: absolute;
+      float: right;
+      right: 0;
+    }
+
+    &__top-line {
+      padding: 61px 78px 53px 80px;
+      background-color: $lightblue;
+
+      .header-nav {
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+
+  .footer {
+    padding: 0;
+    margin-top: 62px;
+
+    &__top-line {
+      margin: 0 72px 0 81px;
+      border-top: 0.5px solid $fontdark;
+      padding-top: 52px;
+    }
+
+    .footer-nav__item {
+      padding: 0;
+    }
+
+    .footer-contacts, .footer-copyright {
+      padding-left: 81px;
+      margin-bottom: 38px;
+    }
+  }
+
+  .main {
+    .container {
+      min-height: 500px;
+      background-color: $lightblue;
+
+      .checkout-cart-success {
+        width: 577px;
+        height: 184px;
+        margin: 0 auto;
+        margin-top: 78px;
+
+        h2 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 200;
+          font-size: 30px;
+          line-height: 29px;
+          text-align: center;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: $black;
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 20px;
+          text-align: center;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: $black;
+        }
+
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: $black;
+        }
+
+        > div {
+          display: flex;
+          justify-content: center;
+          margin-top: 21px;
+
+          a {
+            padding: 18px 15px;
+            border: 2px solid $fontdark;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-social-mobile {
+      display: none;
+    }
+  }
+}

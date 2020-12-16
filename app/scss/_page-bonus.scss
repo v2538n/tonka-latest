@@ -1,0 +1,253 @@
+.page-bonus {
+
+	.header {
+		height: 640px;
+		background: #FFEEF5;
+		margin-bottom: 60px;
+
+		@media screen and (max-width: 940px) {
+			height: 285px;
+			margin-bottom: 100px;
+		}
+
+		@media screen and (max-width: 375px) {
+			height: 285px;
+			margin-bottom: 80px;
+			background: #FFEEF5;
+			background-position: 0 55px;
+		}
+
+		&__bottom-line {
+			display: none;
+		}
+
+		&-bonus {
+			max-width: 900px;
+			height: 506px;
+			padding-top: 30px;
+			margin: 0 auto;
+			position: relative;
+
+			@media screen and (max-width: 940px) {
+				height: 100%;
+			}
+
+			&-title {
+				display: flex;
+				width: 800px;
+				height: 120px;
+				justify-content: space-between;
+				position: absolute;
+				bottom: 110px;
+				left: 0;
+
+				@media screen and (max-width: 940px) {
+					width: 90%;
+					margin: 227px auto;
+					height: 60px;
+					position: relative;
+					top: 0;
+					left: 0;
+
+				}
+
+				@media screen and (min-width: 769px) and (max-width: 940px) {
+					width: 70%;
+					margin: 92px auto;
+				}
+
+				&::before {
+					content: 'бонусная программа';
+					width: 250px;
+					height: 32px;
+					font-weight: 200;
+					font-size: 20px;
+					line-height: 30px;
+					color: #000;
+					position: absolute;
+					top: -45px;
+					left: 150px;
+
+					@media screen and (max-width: 940px) {
+						left: 2px;
+   						bottom: -25px;
+   						top: auto;
+					}
+				}
+
+				&::after {
+					content: '';
+					width: 290px;
+					height: 4px;
+					position: absolute;
+					top: 20px;
+					left: 150px;
+					background: url('/_html/app/images/dest/world_title_line.png') no-repeat;
+
+					@media screen and (max-width: 940px) {
+						display: none;
+					}
+				}
+
+				&__item {
+					display: block;
+					position: relative;
+					z-index: 1;
+
+					@media screen and (max-width: 940px) {
+						width: 42px!important;
+						height: 52px!important;
+						background-size: contain!important;
+					}
+
+					&.item_t {
+						width: 92px;
+						height: 118px;
+						background: url('/_html/app/images/dest/bonus/t.svg') no-repeat;
+					}
+
+					&.item_o {
+						width: 100px;
+						height: 124px;
+						background: url('/_html/app/images/dest/bonus/o.svg') no-repeat;
+						position: relative;
+						z-index: 0;
+					}
+
+					&.item_n {
+						width: 82px;
+						height: 124px;
+						background: url('/_html/app/images/dest/bonus/n.svg') no-repeat;
+					}
+
+					&.item_k {
+						width: 82px;
+						height: 118px;
+						background: url('/_html/app/images/dest/bonus/k.svg') no-repeat;
+					}
+
+					&.item_a {
+						width: 94px;
+						height: 118px;
+						background: url('/_html/app/images/dest/bonus/a.svg') no-repeat;
+					}
+
+				}
+			}
+
+			&-inner {
+				max-width: 750px;
+				margin: 0 auto;
+				position: relative;
+				height: 100%;
+				margin-left: 150px;
+
+				@media screen and (max-width: 940px) {
+					display: none;
+				}
+			}
+
+			&__left-side {
+				width: 240px;
+				height: 180px;
+				position: absolute;
+				bottom: 174px;
+   				left: -280px;
+				background: url('/_html/app/images/dest/1280/header_bonus_1.jpg') no-repeat;
+			}
+
+			&__right-side {
+				width: 452px;
+				height: 686px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: url('/_html/app/images/dest/1280/header_bonus_2.jpg') no-repeat;
+			}
+		}
+	}
+
+	
+
+	.logo {
+		width: 72px;
+		height: 72px;
+		background: url('/_html/app/images/dest/logo_inner_white.svg') no-repeat;
+	}
+
+	.logo-mobile {
+		@media screen and (max-width: 768px) {
+			top: 130px;
+			background: url('/_html/app/images/dest/logo_inner.svg') no-repeat;
+		}
+
+		@media screen and (min-width: 376px) and (max-width: 768px) {
+			background: url('/_html/app/images/dest/logo_inner_white.svg') no-repeat;
+		}
+
+	}
+
+	.user {
+		background: url('/_html/app/images/dest/icons/user.svg') no-repeat 6px 5px;
+		background-color: #fff;
+
+		width: 30px;
+		height: 30px;
+		/*border: 10px dashed #FFEEF5;
+		background-color: #555;*/
+		transition: border .3s;
+		border: 2px dashed #eee;
+		background-color: #fff;
+
+		&:hover {
+			border: 2px dashed #ddd; //FFEEF5
+			background-color: #fff;
+		}
+	}
+
+	.main {
+
+		@media screen and (min-width: 941px) {
+			margin-top: -137px;
+		}
+	}
+
+	.section-1 {
+
+		max-width: 900px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		&__inner {
+
+			@media screen and (min-width: 940px) {
+				max-width: 750px;
+		  	  	margin: 10px auto 0;
+		   		margin-left: 150px;
+			}
+			
+		}
+
+		&__block-2 {
+			width: 240px;
+		}
+
+
+		&__block-2 {
+			font-weight: 300;
+			font-size: 11px;
+			line-height: 22px;
+		}
+
+		&__block-2 {
+
+			max-width: 400px;
+			margin-bottom: 32px;
+			
+			@media screen and (max-width: 940px) {
+				width: 100%;
+   				padding: 0 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,209 @@
+.tonka-constructor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  max-width: 668px;
+  column-gap: 100px;
+}
+
+.tonka-constructor__volumes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .u-radio {
+    margin:0 5px;
+  }
+}
+
+.tonka-constructor__image {
+  position: relative;
+  min-width: 320px;
+  min-height: 320px;
+
+}
+.tonka-constructor__layer {
+  position: absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.tonka-constructor__text {
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transition: color .2s ease-in-out;
+}
+
+.tonka-constructor__mobile {
+  display: none;
+}
+
+.tonka-constructor__scrolspy {
+  list-style: decimal;
+  list-style-position: inside;
+  li {
+    padding-left: 40px;
+    border-left: 1px solid $dark;
+    border-bottom: 1px solid $dark;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 50px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    span {
+      font-weight: 300;
+    }
+  }
+  li::marker {
+
+  }
+}
+
+.tonka-constructor__bonus-per-buy {
+  background: $w;
+  text-align: right;
+  margin-bottom: 16px;
+  margin-top:8px;
+
+  font-size: 11px;
+  line-height: 22px;
+
+  padding: 0 10px;
+}
+
+.tonka-constructor__count {
+  display: flex;
+  border: 1px solid $dark;
+  border-bottom: none;
+  z-index: 2;
+  position: relative;
+  .tonka-constructor__left {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    padding: 15px 18px;
+
+    border-right: 1px solid $dark;
+    width: 50%;
+  }
+  .tonka-constructor__right {
+    width: 50%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+
+    button {
+      padding: 10px;
+      border: transparent;
+      background: transparent;
+      cursor: pointer;
+
+    }
+
+    span {
+      width: 40px;
+    }
+  }
+}
+
+.tonka-constructor__add-to-cart-btn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc(100% + 20px);
+  transform: translateX(-10px) translateY(-10px);
+  height: 74px;
+  background-color: $pink;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+
+.tonka-constructor__price-block {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tonka-constructor__price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 1200px) {
+  .tonka-constructor {
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 920px) {
+  .tonka-constructor__scrolspy {
+    display: none;
+  }
+
+  .tonka-constructor {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+  }
+
+  .tonka-constructor__progress {
+    padding: 0 20px;
+  }
+
+
+  .tonka-constructor__layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tonka-constructor__desktop {
+    display: none;
+  }
+  .tonka-constructor__mobile {
+    display: block;
+  }
+}

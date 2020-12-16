@@ -1,0 +1,48 @@
+/*
+Как использовать:
+
+<label class="u-radio-image">
+  <input name="my-radio" type="radio">
+  <div class="mark" style="background-image:url('image.png')"></div>
+  <div class="">Моя радиокнопка 1</div>
+</label>
+
+*/
+
+.u-radio-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0px;
+  width: 70px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 14px;
+  color: $dark;
+  text-align: center;
+
+  input[type=radio] {
+    display: none;
+  }
+
+  .mark {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid $dark;
+    transition: border .2s ease-in-out;
+
+    margin-bottom: 7px;
+  }
+
+  input[type=radio]:checked + .mark {
+    border: 5px solid $dark;
+  }
+}

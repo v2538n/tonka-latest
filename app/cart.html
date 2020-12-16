@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Tonka</title>
+    <meta name="description" content="Tonka">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- <link rel="icon" href="images/favicon.png"> -->
+    <!-- <meta property="og:image" content="images/dest/preview.jpg"> -->
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+<div class="page page-list page-cart">
+
+    <!-- -header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__sidebar"></div>
+            <!-- header__top-line -->
+            <div class="header__top-line">
+
+                <div class="header__left-side">
+                    <a href="/" class="logo-inner"></a>
+                </div>
+
+                <div class="header__right-side">
+                    <nav class="header-nav">
+                        <a href="#" class="header-nav__item">Продукция</a>
+                        <a href="#" class="header-nav__item">Мир tonka</a>
+                        <a href="#" class="header-nav__item">для компаний</a>
+                    </nav>
+
+                    <!-- user-->
+                    <a href="#" class="user"></a>
+
+                    <!-- basket -->
+                    <a href="#" class="basket">
+                        <span class="basket__item">1</span>
+                    </a>
+
+                    <span class="order-price">12600 руб.</span>
+                </div> <!-- /header__right-side -->
+
+            </div> <!-- /header__top-line -->
+
+            <a href="/" class="logo-inner__mobile"></a>
+
+            <!-- header__bottom-line -->
+            <div class="header__bottom-line">
+
+            </div>
+
+        </div>
+
+        <!-- login -->
+        <div class="login">
+            <div class="login-inner">
+                <div class="login-close"></div>
+
+                <a href="/" class="logo login-logo"></a>
+
+                <div class="login-header">Бонусная программа</div>
+                <form action="" id="loginForm" class="login-form">
+                    <input class="login-form__item _req _email" type="text" name="email" value="E-mail"
+                           autocomplete="off">
+                    <input class="login-form__item _req _password" type="text" name="password" value="Пароль"
+                           autocomplete="off">
+                    <button class="login-form__button" type="submit">вход</button>
+                </form>
+
+                <div class="login-links">
+                    <a href="#" class="login-links__item">Регистрация</a>
+                    <a href="#" class="login-links__item">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+
+    </header> <!-- header -->
+
+
+    <main class="main">
+
+        <div class="container">
+
+            <!-- left-side -->
+            <div class="main__cart-left-side">
+                <div class="catalog-list">
+                    <h3>Оформление</h3>
+                    <div class="tabs">
+                        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                        <label for="tab-btn-1">Заказ + бонусы</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                        <label for="tab-btn-2">Быстрый заказ</label>
+
+                        <div id="content-1">
+                            <p class="checkout-cart-text mb-25">Уже после первого заказа вы становитесь участником нашей
+                                <a href="#" class="text-underline">бонусной системы</a>, копите балы и скидки</p>
+                            <h2 class="checkout-cart-title mb-10">личная информация</h2>
+                            <div class="checkout-cart-block-personinfo">
+                                <div class="checkout-cart-block-personinfo-wrapper">
+                                    <input type="text" value="" placeholder=" "/>
+                                    <label>Имя</label>
+                                </div>
+                                <div class="checkout-cart-block-personinfo-wrapper">
+                                    <input type="text" value="" placeholder=" "/>
+                                    <label>E-mail</label>
+                                </div>
+                                <div class="checkout-cart-block-personinfo-wrapper">
+                                    <input type="text" value="" id="checkout-cart-block-personinfo"
+                                           placeholder="+7" class="text-gray"/>
+                                    <label class="o-0">телефон</label>
+                                </div>
+                            </div>
+                            <h2 class="checkout-cart-title mb-10">доставка</h2>
+                            <div class="block-list mb-30">
+                                <div>
+                                    <input id="kur" type="radio" name="gender" value="kur" checked>
+                                    <label for="kur"><span>Курьером (Москва и МО) <strong>2-3 дня</strong></span></label>
+                                </div>
+                                <div>
+                                    <input id="ems" type="radio" name="gender" value="ems">
+                                    <label for="ems"><span>EMS <strong>3-5 дней</strong></span></label>
+                                </div>
+                                <div>
+                                    <input id="sam" type="radio" name="gender" value="sam">
+                                    <label for="sam"><span>Самовывоз из офисов компании <strong>2-3 дня</strong></span></label>
+                                </div>
+                            </div>
+                            <h2 class="checkout-cart-title mb-10">адрес доставки</h2>
+                            <div class="checkout-cart-block-address">
+                                <div class="checkout-cart-block-address-wrapper checkout-cart-search">
+                                    <input type="text" value="" placeholder=" "/>
+                                    <label>Адрес доставки</label>
+                                </div>
+                                <div class="checkout-cart-block-address-wrapper">
+                                    <input type="text" value="" placeholder=" "/>
+                                    <label>Номер квартиры, офиса</label>
+                                </div>
+                            </div>
+                            <h2 class="checkout-cart-title mb-10">оплата</h2>
+                            <div class="block-list mb-30">
+                                <div>
+                                    <input id="nal" type="radio" name="payment" value="nal" checked>
+                                    <label for="nal"><span>Наличными курьеру</span></label>
+                                </div>
+                                <div>
+                                    <input id="card" type="radio" name="payment" value="card">
+                                    <label for="card"><span>Картой на сайте</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content-2">
+                            <p class="checkout-cart-text mb-25">Уже после первого заказа вы становитесь участником нашей
+                                <a href="#" class="text-underline">бонусной системы</a>, копите балы и скидки
+                            </p>
+                            <div class="checkout-cart-block-address">
+                                <div class="checkout-cart-block-address-wrapper">
+                                    <input type="text" value="" placeholder=" "/>
+                                    <label>Имя</label>
+                                </div>
+                                <div class="checkout-cart-block-address-wrapper o-07">
+                                    <input type="text" value="" id="fast-checkout" placeholder="+7"/>
+                                    <label class="o-0">Телефон</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-confirm mb-30">Оформить заказ</button>
+                    <div class="checkout-cart-agree">
+                        <input type="checkbox" id="policy" checked/>
+                        <label for="policy">
+                                    <span>Согласен с <a href="" class="text-underline">политикой обработки
+                                    персональных данных</a> и <a href="" class="text-underline">политикой
+                                    конфиденциальности</a>
+                                </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right-side -->
+            <div class="main__cart-right-side">
+                <div class="cart-container">
+                    <h2>Ваш заказ</h2>
+                    <div class="mobile-auth-bonus-block">
+                        <span>Авторизируйтесь</span>, если вы учавствуете<br />в нашей бонусной программе
+                    </div>
+                    <div class="cart-body">
+                        <div class="cart-items">
+                            <input id="tab-two1" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two1" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two2" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two2" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two3" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two3" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two4" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two4" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two5" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two5" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two6" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two6" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two7" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two7" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items">
+                            <input id="tab-two8" type="checkbox" name="tabs">
+                            <div class="cart-item">
+                                <label for="tab-two8" class="cart-item__open"></label>
+                                <span class="cart-item__title">Свеча tonka altai</span>
+                                <span class="cart-item__price push">9600 руб.</span>
+                                <span class="cart-item__close"><img src="images/dest/icons/close.png"/></span>
+                            </div>
+                            <div class="cart-description">
+                                <div class="cart-description__description">50 мл., белый тубус, без открытки, матовая
+                                    табличка, дизайн "я люблю тебя, тонка", шрифт стандартный
+                                </div>
+                                <div class="cart-description__img">
+                                    <div class="background_white">
+                                        <img src="images/dest/catalog/1280/img_5.png" alt="Фото"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>12600 руб.</h3>
+                    <p class="cart-bonus-current">или 1260 бонусов</p>
+                    <div class="block-apply-bonus">
+                        У вас 484 бонуса
+                        <span class="button-bunus">Применить</span>
+                    </div>
+                    <div class="block-apply-promo">
+                        Промо-код
+                        <span class="button-promo">Применить</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-line">
+                <div class="footer-nav">
+                    <a href="#" class="footer-nav__item">продукция</a>
+                    <a href="#" class="footer-nav__item">мир tonka</a>
+                    <a href="#" class="footer-nav__item">для компаний</a>
+                    <a href="#" class="footer-nav__item">доставка</a>
+                    <a href="#" class="footer-nav__item">бонусная программа</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social__item footer-social__item--phone"></a>
+                    <a href="#" class="footer-social__item footer-social__item--insta"></a>
+                    <a href="#" class="footer-social__item footer-social__item--fb"></a>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <span class="footer-contacts__item">Москва, Б. Патриарший пер 12, стр. 2</span>
+                <span class="footer-contacts__item">+7 985 766 12 89</span>
+                <span class="footer-contacts__item">info@tonkaperfumes.ru</span>
+            </div>
+            <div class="footer-copyright">
+                © Tonka Perfumes Moscow 2020
+            </div>
+            <div class="footer-social-mobile">
+                <a href="#" class="footer-social__item footer-social__item--phone"></a>
+                <a href="#" class="footer-social__item footer-social__item--insta"></a>
+                <a href="#" class="footer-social__item footer-social__item--fb"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.min.js"></script>
+    <script src="js/dist/inputmask.min.js"></script>
+    <script src="js/imask.js"></script>
+</div>
+</body>
+</html>
